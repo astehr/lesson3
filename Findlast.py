@@ -1,12 +1,12 @@
 import os
 
-path = r'C:\Users\fedia\PycharmProjects\Lesson3\File'
+PATH_TO_DIR = '/File'
 
 x = []
 
-for file in os.listdir(path):
+for file in os.listdir(PATH_TO_DIR):
     if file.endswith('.txt'):
-        x.append(os.path.join(path, file))
+        x.append(os.path.join(PATH_TO_DIR, file))
 
 a = max(x, key=os.path.getctime)
 
